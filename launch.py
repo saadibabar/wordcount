@@ -1,7 +1,7 @@
 import requests
 
-#url=input("Enter the URL :")
-url="http://www.agatotranslate.ae"
+url=input("Enter the URL :")
+#url="http://www.saadibabar.blogspot.com"
 filename=input("FileName to save the content:")
 page = requests.get(url)
 
