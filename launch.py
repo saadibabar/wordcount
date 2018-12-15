@@ -16,15 +16,15 @@ soup = BeautifulSoup(page.content,'html.parser')
 
 
 
-headers=soup.select('h1,h2,h3,h4,h5,h6,h7,p')
+headers=soup.select('h1,h2,h3,h4,h5,h6,h7,p,img,li,a')
+
 
 
 
 f= open(filename+".txt",'w')
 
 for s in headers:
-    print(s.get_text(),file=f)
-    
-
+    print(s.get_text().encode("utf-8:"),file=f)
+        
 
 
